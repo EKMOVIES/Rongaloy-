@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rongaloy+ || রঙ্গালয়+ |The world of theater</title>
+  <link rel="icon" href="images/plynutton logo.png">
+
+  <link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-user-dropdown.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+  
+  
+ <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+<style>
+body {
+margin: 0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  background-image: url("images/font logo5.png");
+ 
+}
+
+.swiper {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 25px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 100px;
+        height: 100px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+
+
+
+
+/* Full-width input fields */
+.container-xy input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #7fbbf6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #7fbbf6;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container-xy {
+  padding: 16px;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: red; 
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background: rgba(#bc40df, 0.9);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #bc40df;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+
+.modal-content2 {
+  background: rgba(#bc40df, 0.9);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #bc40df;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+
+
+
+
+
+
+
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+
+
+
+
+
+
+
+
+.wrapper{
+ display: inline-flex;
+
+}
+.wrapper .static-txt{
+
+ color: White;
+ font-size: 60px;
+ font-weight: 400;
+}
+
+.wrapper .dynamic-text{
+ margin-left: 5px;
+ height: 70px;
+ line-height: 70px;
+ overflow: hidden;
+}
+
+.dynamic-text li{
+   color: #bc40df;
+   list-style: none;
+    font-size: 60px;
+	font-weight: 500;
+	position: relative;
+	top: 0;
+	animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide{
+   
+   100%{
+     top: -280px;
+   }
+
+}
+
+.dynamic-text li span{
+   position: relative;
+}
+.dynamic-text li span:after{
+    left: 0;
+	content:"";
+	color: yellow;
+	position: absolute;
+	background:  #393d42;;
+	height: 100%;
+	width: 100%;
+	border-left: 2px solid red;
+    animation: typing 3.0s steps(20) infinite;
+}
+
+@keyframes typing{
+  
+  100%{
+    left: 100%;
+	margin: 0 -35px 0 35px;
+  }
+
+
+}
+
+.content{
+
+ 
+ 
+margin-left: 42%;
+	
+display: inline-block;
+	
+}
+.content a{
+margin-top: 0;
+ 
+}
+.manu-bar{
+
+ margin-left: 25%;
+ 
+	
+	
+}
+
+
+.left i{
+  display: flex;
+  padding-top: 2%;
+  
+
+}
+
+
+
+.manu-bar a{
+    
+   text-decoration: none;
+   
+   font-weight: 600;
+   font-family:cursive;
+   
+  
+}
+
+.row {
+  margin-left: 28%;
+  display: flex;
+  
+}
+
+/* Left column (menu) */
+.left {
+  width: 60%;
+  padding: 15px 0;
+}
+
+.left h2 {
+  padding-left: 8px;
+}
+
+.leftsearch-box{
+ display: flex;
+}
+
+.leftsearch-box i{
+  background-color: #bc40df;
+  
+  color: black;
+  
+  border-radius: 0 25px 25px 0;
+  width: 80px;
+}
+
+
+
+/* Style the search box */
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 3px solid #bc40df;
+  border-radius: 25px 0px 0 25px;
+  
+  
+}
+
+/* Style the navigation menu inside the left column */
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-weight: 600;
+  overflow: scroll;
+	height: 230px;
+	
+  background-color: transparent;
+}
+
+#myMenu::-webkit-scrollbar{
+	
+	width: 0;
+	box-sizing: border-box;
+	
+	
+}
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+  display: block;
+   border-radius: 50px;
+   font-weight: 600;
+}
+
+#myMenu li a:hover {
+  background-color: #292c2f;
+}
+
+
+.manu-bar a{
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+ padding: 10px 20px;
+ color: white;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 20px;
+ overflow: hidden;
+ transition: 0.2s;
+}
+
+
+.manu-bar a:hover{
+  
+  color: #2196f3;
+  background: black;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+ transition-delay: 1s;
+}
+
+.manu-bar a span{
+
+ position: absolute;
+ display: block;
+
+}
+
+.manu-bar a span:nth-child(1){
+
+top:0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+.manu-bar a:hover span:nth-child(1){
+
+left: 100%;
+transition: 1s;
+
+}
+
+.manu-bar a span:nth-child(3){
+
+bottom:0;
+right: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(270deg,transparent,#2196f3);
+}
+
+.manu-bar a:hover span:nth-child(3){
+
+right: 100%;
+transition: 1s;
+transition-delay: 0.5s;
+}
+
+
+.manu-bar a span:nth-child(2){
+
+right:0;
+top: -100%;
+height: 100%;
+width: 2px;
+background: linear-gradient(180deg,transparent,#2196f3);
+}
+
+.manu-bar a:hover span:nth-child(2){
+
+top: 100%;
+transition: 1s;
+transition-delay: 0.25s;
+}
+
+.manu-bar a span:nth-child(4){
+
+left:0;
+bottom: -100%;
+height: 100%;
+width: 2px;
+background: linear-gradient(360deg,transparent,#2196f3);
+}
+
+.manu-bar a:hover span:nth-child(4){
+
+bottom: 100%;
+transition: 1s;
+transition-delay: 0.75s;
+}
+
+
+footer p, footer strong, footer b, footer {
+    color: #b0b0b0;
+}
+
+
+
+.footer-top, .footer-bottom {
+    background-color: #292c2f;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    border-top: 1px solid #313646;
+    background-color: #292c2f; !important;
+    color: #b0b0b0;
+    font-family: rubik;
+}
+color: #99a9b5;
+    padding-top: 15px;
+}
+
+
+
+#footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
+    color: #99a9b5;
+    padding-top: 15px;
+}
+
+.footer-bottom ul {
+    margin: 0;
+}
+.inline-inside {
+    font-size: 0;
+    line-height: 0;
+}
+.clearfix:after, .clearfix:before {
+    content: "";
+    display: table;
+}
+#footer-menu li {
+    display: inline-block;
+    padding: 0 21px;
+    position: relative;
+    line-height: 1;
+}
+
+#footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
+    color: #99a9b5;
+    padding-top: 15px;
+}
+
+#footer-navigation, #footer-navigation li a, .custom-footer, .custom-footer li a {
+    color: #99a9b5;
+    padding-top: 15px;
+}
+
+
+
+
+
+#footer-socials {
+    text-align: right;
+}
+
+#footer-socials .socials {
+    text-align: right;
+    margin: 0 -7px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a.socials-item {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 0 5px;
+    line-height: 16px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #141421;
+    border: 1px solid #2e2e4c;
+    box-shadow: 3px 9px 16px rgb(0,0,0,0.4), -3px -3px 10px rgba(255,255,255, 0.06), inset 14px 14px 26px rgb(0,0,0,0.3), inset -3px -3px 15px rgba(255,255,255, 0.05);
+}
+
+.socials-item i {
+    display: inline-block;
+    font-weight: normal;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: top;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    text-rendering: auto;
+}
+
+.facebook {
+    color: #4e64b5;
+}
+
+.twitter {
+    color: #00aced;
+}
+.instagram {
+    color: #9a8f62;
+}
+.youtube {
+    color: #c82929;
+}
+
+.telegram {
+    color: #2ca5e0;
+}
+
+
+a.socials-item:hover {
+    box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
+    border-color: rgba(255, 6, 224, 0.61);
+    background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
+}
+
+.footer-bottom a:hover {
+    color: white;
+}
+
+
+
+
+
+
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+
+
+.posts li a {
+    color: #99a9b5;
+}
+
+img {
+    border-style: none;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+
+
+#waterdrop {
+    height: 30px;
+}
+
+#waterdrop canvas {
+    bottom: -70px !important;
+}
+
+
+.left-item{
+    
+    margin-top: 8px;
+     margin-left: 7px;
+    position: absolute;
+
+}
+
+
+
+
+.left-item a{
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 600;
+}
+
+.left-item1 {
+ padding-top: 15px;
+ font-size: 30px;
+ 
+}
+.left-item1 a span{
+
+   padding-left: 10px;
+}
+
+
+.left-item1 a span:hover{
+    color: #fff;
+	border: 10px solid #bc40df;
+	
+	background-color: #bc40df;
+	border-radius: 50px;
+}
+.left-item a i{
+  color: #292c2f;
+  padding:15px;
+  background-color: #bc40df;
+  border: 1px solid rgba(255, 6, 224, 0.61);
+  border-radius: 50px;
+  
+}
+
+.left-item a i:hover{
+   color: red;
+ box-shadow: 0 0px 20px rgba(84, 1, 74, 0.7);
+    border-color: rgba(255, 6, 224, 0.61);
+    background: linear-gradient(to right, rgba(255, 9, 9, 0.12941176470588237), #c000ffb5, rgba(255, 0, 94, 0.14));
+
+}
+
+.icon-xy{
+margin-right: 200px;
+margin-top: 30px;
+   position: relative;
+}
+
+.icon-xy a{
+   padding: 20px;
+}
+.icon-xy a img{
+   width: 30px;
+   color: white;
+   
+}
+.left-icon-xy{
+
+  float: right;
+
+}
+
+
+
+
+
+
+
+.notification {
+  
+  color: white;
+  text-decoration: none;
+  padding: 15px 26px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+
+
+.notification .badge {
+   font-size: 10px;
+  position: absolute;
+  top: -5px;
+  right: -8px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+.imgcontainer h2{
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+.container-xy h3{
+    height: 60px;
+    margin-left: 20px;
+    border-bottom: 2px solid black;
+	line-height: 40px;
+}
+.container-xy a{
+  text-decoration: none;
+  color: red;
+ padding: 10px;
+}
+
+
+.container-xy img{
+   width: 300px;
+  
+}
+
+.alert {
+margin-left: 110px;
+  width: 890px;
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+  
+}
+
+.alert.success {background-color: #04AA6D;}
+.alert.info {background-color: #2196F3;}
+.alert.warning {background-color: #ff9800;}
+
+.closebtnxyz {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtnxyz:hover {
+  color: black;
+}
+
+
+.animated-img {
+float: right;
+width: 500px;
+  height: 120px;
+  
+  position: relative;
+  animation-name: animated;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animated {
+  0%   {right:0px; }
+  25%  {right:100px; }
+  50%  {right:50px;}
+  75%  {right:100px; }
+  100% {right:0px;}
+}
+
+
+
+
+*/.static-txt {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}/*
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<header class="header-user-dropdown">
+
+	<div class="header-limiter">
+		<h1><a href="#"><img src="images/plynutton logo.png" title="Rongaloy+" style=" width:60px; clip-path: circle(50%);"></img>Ronga<span>loy+</span></a></h1>
+
+		<nav>
+			<a href="#">Overview</a>
+			<a href="#">Surveys</a>
+			<a href="#">Reports</a>
+			<a href="#">Roles <span class="header-new-feature">new</span></a>
+			<a href="#">About</a>
+		</nav>
+
+
+		<div class="header-user-menu">
+			<img src="images/ishtiak hossain.jpg" alt="User Image"/>
+
+			<ul>
+			    <li><a href="#">Profile</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Payments</a></li>
+				<li><a href="#" class="highlight" onclick="document.getElementById('id01').style.display='block'">Logout</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+</header>
+
+<!-- The content of your page would go here. -->
+
+
+
+
+
+
+<div id="id01" class="modal" style="width: 40%;">
+  
+  <form class="modal-content2 animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="images/ishtiak hossain.jpg" alt="Avatar" class="avatar" style="width: 120px;">
+    </div>
+
+    <div class="container-xy">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" style="font-size: 25px; font-weight: 600; color: black;">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container-xy" style="background: rgba(255, 165, 0, 0.73);">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" style="font-size: 25px; font-weight: 600; color: red;">Forgot: <a href="#" style=" text-decoration: none; color: white;">password?</a></span>
+    </div>
+  </form>
+</div>
+
+
+
+<div class="left-icon-xy">
+<div class="icon-xy">
+ 
+  <a href="#" onclick="document.getElementById('id03').style.display='block'"><img src="images/google-play.png" title="Download our app"></img></a>
+<a href="#" class="notification" onclick="document.getElementById('id02').style.display='block'">
+  <span><img src="images/notification.png" title="notification"></img></span>
+  <span class="badge">4</span>
+</a>
+</div>
+
+
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2 >Notification</h2>
+    </div>
+
+    <div class="container-xy">
+<div class="alert">
+  <span class="closebtnxyz">&times;</span>  
+  <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+</div>
+
+<div class="alert success">
+  <span class="closebtnxyz">&times;</span>  
+  <strong>Success!</strong> Indicates a successful or positive action.
+</div>
+
+<div class="alert info">
+  <span class="closebtnxyz">&times;</span>  
+  <strong>Info!</strong> Indicates a neutral informative change or action.
+</div>
+
+<div class="alert warning">
+  <span class="closebtnxyz">&times;</span>  
+  <strong>Warning!</strong> Indicates a warning that might need attention.
+</div>
+    </div>
+
+    <div class="container-xy" style="background-color:transparent">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" style="font-size: 25px; font-weight: 600; color: red;"><a href="#" style=" text-decoration: none; color: white;"></a></span>
+    </div>
+  </form>
+</div>
+
+
+<div id="id03" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+     <img src="images/plynutton logo.png" alt="Avatar" class="avatar" style="width: 120px;">
+	 <h2 >Rongaloy+ Androied App</h2>
+    </div> 
+	
+    <div class="container-xy">
+        <a href="#" style="margin-left: 270px;"><img src="images/an app.png"></img></a><a href="#"><img src="images/an app2.png"></img></a>
+		
+    </div>
+
+    <div class="container-xy" style="background-color:transparent">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" style="font-size: 25px; font-weight: 600; color: red;"><a href="#" style=" text-decoration: none; color: white;"></a></span>
+    </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="wrapper" style=" padding-left: 400px;padding-top: 15px;">
+   <div class="static-txt" style="padding-top: 5px;">Welcome To</div>
+   <ul class="dynamic-text">
+     <li><span>Rongaloy+</span></li>
+	 <li><span style=" color: green;">Movies World</span></li>
+	 <li><span style=" color: red;">Tv world</span></li>
+	 <li><span style=" color: blue;">Games world</span></li>
+   </ul>
+
+</div>
+
+
+
+
+
+<div class="left-item">
+
+<div class="left-item1">
+
+   <a href="#" style="padding-left: 125px; margin-top: 15px;" title="Movies"><i class="fas fa-video"></i><span</span></a>
+</div>
+<div class="left-item1">
+
+   <a href="#" style="padding-left: 135px;" title="Tv"><i class="fas fa-tv"></i><span></span></a>
+</div>
+<div class="left-item1">
+
+   <a href="#"style="padding-left: 138px;" title="Games"><i class="fas fa-gamepad"></i><span></span></a>
+</div>
+<div class="left-item1">
+
+   <a href="#" style="padding-left: 130px;" title="books"><i class="fas fa-book-reader"></i><span></span></a>
+</div>
+<div class="left-item1">
+
+   <a href="#" style="padding-left: 105px;" title="Design"><i class="fas fa-palette"></i><span></span></a>
+</div>
+</div>  
+
+
+
+
+
+
+  
+
+<div class="content">
+       
+	   
+
+		
+    
+<div class="animated-img">
+   
+   <a href="#" class="logo" style="padding-top: 5%;" > <img src="images/font logo3.png" title="Rongaloy+" style=" width:360px; padding-bottom: 20px;padding-top: 10px;"></img></a>
+   
+</div>
+
+</div>
+
+
+
+
+
+<div class="manu-bar">
+	 <a href="Responsive-slideshow.html">
+   
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+   
+         Movies
+   
+   
+   </a>
+	 <a href="Discovery.html" class="live-tv">
+   
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+   
+         Live Tv
+   
+   
+   </a>
+	 <a href="">
+   
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+   
+         Games
+   
+   
+   </a>
+	 <a href="">
+   
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+   
+         Books
+   
+   
+   </a>
+	 <a href="">
+   
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+   
+         News
+   
+   
+   </a>
+	 <a href="">
+   
+        <span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+   
+         Others
+   
+   
+   </a>
+</div>
+
+
+
+
+ <div class="row">
+  <div class="left">
+  <div class="leftsearch-box">
+     
+   <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+   
+   <i class="fas fa-search" style="padding-left:25px; padding-top: 12px; font-size: 25px;"></i>
+  
+   </div>
+    <ul id="myMenu">
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">TV Show</a></li>
+      <li><a href="#">Live Stream</a></li>
+      <li><a href="#">Hindi Movies</a></li>
+      <li><a href="#">English Movies</a></li>
+      <li><a href="#">chiness Movies</a></li>
+      <li><a href="#">Books</a></li>
+      <li><a href="#">Sports</a></li>
+      <li><a href="#">Games</a></li>
+	  <li><a href="#">online Games</a></li>
+    </ul>
+  </div>
+  
+
+</div>
+
+ 
+
+
+
+ 
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+
+            
+            <div class="col-md-6" style="display: flex;">
+              <nav id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+                <ul id="footer-menu" class="nav-menu styled clearfix inline-inside">
+                  <li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="#">Support</a></li>
+                  <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Contact Us</a></li>
+                  <li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="#">Disclaimer</a></li>
+                  <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="#">Add more</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-md-3">
+              <div id="footer-socials">
+                <div class="socials inline-inside socials-colored">
+
+                  <a href="https://www.youtube.com/watch?v=QvkH8wO4L1Q" target="_blank" title="Facebook" class="socials-item">
+                    <i class="fab fa-facebook-f facebook"></i>
+                  </a>
+                  <a href="#" target="_blank" title="Twitter" class="socials-item">
+                    <i class="fab fa-twitter twitter"></i>
+
+                  </a>
+                  <a href="#" target="_blank" title="Instagram" class="socials-item">
+                    <i class="fab fa-instagram instagram"></i>
+                  </a>
+                  <a href="#" target="_blank" title="YouTube" class="socials-item">
+                    <i class="fab fa-youtube youtube"></i>
+                  </a>
+                  <a href="#" target="_blank" title="Telegram" class="socials-item">
+                    <i class="fab fa-telegram telegram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <script>
+var close = document.getElementsByClassName("closebtnxyz");
+var i;
+
+for (i = 0; i < close.length; i++) {
+  close[i].onclick = function(){
+    var div = this.parentElement;
+    div.style.opacity = "0";
+    setTimeout(function(){ div.style.display = "none"; }, 600);
+  }
+}
+</script>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+
+
+
+
+<script>
+
+	$(document).ready(function(){
+
+		var userMenu = $('.header-user-dropdown .header-user-menu');
+
+		userMenu.on('touchend', function(e){
+
+			userMenu.addClass('show');
+
+			e.preventDefault();
+			e.stopPropagation();
+
+		});
+
+		// This code makes the user dropdown work on mobile devices
+
+		$(document).on('touchend', function(e){
+
+			// If the page is touched anywhere outside the user menu, close it
+			userMenu.removeClass('show');
+
+		});
+
+	});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+
+ <script> jQuery('#waterdrop').raindrops({color:'#1c1f2f', canvasHeight:150, density: 0.1, frequency: 20});
+</script>
+
+
+
+
+
+<!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+
+
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

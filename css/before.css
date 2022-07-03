@@ -1,0 +1,118 @@
+@media(max-width:768px){
+
+.youty{
+	
+	padding-left: 0%;
+	padding-top: 0%;
+}
+
+	
+.Youtubek {
+	
+	position: relative;
+	overflow: hidden;
+	
+	width: 100%;
+	
+	
+}
+
+
+.Youtubek:before {
+	 display: block;
+	 content: "";
+	padding-top: 73%;
+	
+	
+}
+
+
+.Youtubek iframe{
+	
+	position: absolute;
+	 top: 0;
+	 left: 0;
+	 
+	 bottom: 0;
+	 
+	 width: 100%;
+	 
+	 height: 100%;
+}
+
+
+
+
+
+
+
+
+
+.server-option a{
+	text-decoration: none;
+	 color:aquamarine;
+	display: inline-block;
+	padding: 2px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.textborder img{
+	width: 10%;
+
+	
+	
+}
+
+
+
+
+
+
+.texth1 h2,.texth1 h3{
+	
+	display:table-header-group;
+	
+}
+.texth1{
+	
+     padding-top: 0%;
+	 
+	 padding-left: 1%;
+	 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+

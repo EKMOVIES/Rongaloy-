@@ -1,0 +1,27 @@
+{
+  "tags": [
+    "swiper"
+  ],
+  "name": "Swiper - Effect coverflow",
+  "dependencies": {
+    "swiper": "latest",
+    "parcel-bundler": "^1.6.1"
+  }
+}
+
+
+
+
+
+
+
+{
+  "tags": [
+    "swiper-x"
+  ],
+  "name": "Swiper - Virtual slides",
+  "dependencies": {
+    "swiper-x": "latest",
+    "parcel-bundler": "^1.6.1"
+  }
+}

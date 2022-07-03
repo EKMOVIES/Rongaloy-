@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+body {margin:0;font-family:Arial}
+
+
+
+header{
+position: fixed;
+margin: 0;
+padding: 0;
+  background:#0c0d17;
+width: 100%;
+}
+
+
+
+.top-nav{
+
+   margin: 0;
+   padding: 0;
+   width: 95%;
+}
+
+
+.left-point{
+  display: flex;
+  width: 70%;
+}
+.left-point, .left-links2{
+
+     display: inline-flex;
+}
+.logo{
+margin-left: 30px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+.logo a img{
+
+   width: 190px;
+}
+
+
+.search-box{
+
+margin-top: 10px;
+margin-left: 60px;
+
+width: 40%;
+}
+
+input[type=text] {
+  width: 300px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+.dropbtn {
+ 
+   width: 35px;
+   height: 35px;
+  color: white;
+  margin-top: 5px;
+  font-size: 20px;
+  
+  cursor: pointer;
+}
+.dropbtn img{
+  width: 100%;
+
+}
+.dropbtn:hover, .dropbtn:focus {
+  width: 36px;
+   height: 36px;
+}
+
+.dropdown {
+   margin-right: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  margin-top: 10px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
+.left-links2{
+float: right;
+    margin-top: 10px;
+	
+
+}
+
+.dropbtn2 {
+
+   
+   width: 40px;
+   height: 40px;
+  color: white;
+  margin-top: 5px;
+  font-size: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  margin-top: 10px;
+   right: 0;
+   
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 a {
+  color: black;
+ 
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown2 a:hover {background-color: #ddd;}
+
+.show2 {display: block;}
+
+
+.dropdown2 img{
+   width: 100%;
+   
+}
+
+.notification-bar{
+width: 30px;
+height: 30px;
+margin-right: 80px;
+}
+.notification-bar img{
+   width: 20px;
+}
+.notification-bar img:hover{
+   width: 21px;
+}
+.notification {
+ 
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  position: relative;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+
+
+.notification .badge {
+  position: absolute;
+  top: -4px;
+  
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="top-nav">
+  <div class="nav-items">
+  <div class="left-point">
+  <div class="logo">
+   <a href="" ><img src="images/font logo2.png"></img></a>
+  </div>
+     
+	  <div class="search-box">
+	  
+	  <form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+	  
+	  </div>
+	 
+	  
+	  </div>
+	  	  <div class="left-links2">
+		  <div class="dropdown">
+ 
+   <div class="profile2">
+  <img src="images/more.png" onclick="myFunction()"   class="dropbtn"></img>
+  </div>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+<div class="notification-bar">
+<a href="#" class="notification">
+
+  <span style="30px;"><img src="images/notification2.png"></img></span>
+  <span class="badge">3</span>
+</a>
+</div>
+	  <div class="dropdown2">
+    <div class="profile">
+  <img src="images/ishtiak hossain.jpg" onclick="mydrop2()"  class="dropbtn2"></img>
+  </div>
+  <div id="myDropdown2" class="dropdown-content2">
+    <a href="#home">Profile</a>
+    <a href="#about">Setting</a>
+    <a href="#contact">Logout</a>
+  </div>
+</div>
+	  
+	  
+	  </div>
+	</div>
+  
+  </div>
+
+</header>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function mydrop2() {
+  document.getElementById("myDropdown2").classList.toggle("show2");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn2')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show2')) {
+        openDropdown.classList.remove('show2');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

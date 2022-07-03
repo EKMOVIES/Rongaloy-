@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+body{
+	background: #E5E5E5;
+	
+}
+
+.wrapper{
+	display: flex;
+	height: 70px;
+	font-family: oswald;
+	width: 100%;
+	background: #43403c;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:99;
+	
+}	
+
+.nav{
+	
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	margin: 0;
+	
+	
+}
+
+.nav a{
+	 font-size: 16px;
+	 line-height: 30px;
+	 text-transform: uppercase;
+	 color: yellow;
+	 text-decoration: none;
+	 outline:none;
+	 letter-spacing: normal;
+	 padding: 0 5px;
+	 margin: 0 5px;
+	 line-height: 70px;
+	 
+}
+.logo a{
+	font-size: 35px;
+	text-transform: none;
+	color: yellow;
+	letter-spacing: -2px;
+	box-shadow: 0 10px 10px 0;
+	
+	
+}
+
+.nav a:first-child{
+	
+	border-bottom: 2px solid #0397d6
+}
+
+.nav a{
+	
+	color: white;
+}
+
+.nav a:hover{
+	
+	color: yellow;
+	
+}
+.searchitem{
+	
+	display: flex;
+	width: 350px;
+	align-items: center;
+	justify-content: space-between;
+	
+	
+}
+
+.search{
+	
+	border: 1px solid gray;
+	width: 100%;
+	height: 35px;
+	border-radius: 20px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	justify-content:center;
+}
+
+
+.search input{
+	
+	width: 100%;
+	margin-left: 10px;
+	border: none;
+	outline-style: none;
+	background: #43403c;
+}
+
+.fa-search{
+	
+	margin-right: 10px;
+}
+
+.btn{
+	width: 90px;
+	text-transform: uppercase;
+	margin: 0 50px 0 15px;
+	
+	background: #43403c;
+	color: white;
+	height: 34px;
+	line-height: 32px;
+	padding: 0 15px;
+	
+	font-weight: 400;
+	text-align: center;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	white-space: nowrap;
+	vertical-align: middle;
+	cursor: pointer;
+	outline: none;
+}
+	
+.btn:hover{
+	
+	color: yellow;
+}	
+	
+
+
+
+	
+	.content .links ul{
+  position: absolute;
+  background: #171c24;
+  top: 80px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+.content .links li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+.content .links ul li a{
+  display: block;
+  width: 100%;
+  line-height: 30px;
+  border-radius: 0px!important;
+}
+.content .links ul ul{
+  position: absolute;
+  top: 0;
+  right: calc(-100% + 8px);
+}
+.content .links ul li{
+  position: relative;
+}
+.content .links ul li:hover ul{
+  top: 0;
+}
+
+/* Responsive code start */
+@media screen and (max-width: 1250px){
+  .wrapper nav{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links{
+    margin-left: 30px;
+  }
+  .content .links li a{
+    padding: 8px 13px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 100px);
+  }
+  .wrapper .search-box input{
+    padding: 0 100px 0 15px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .wrapper .menu-icon{
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before{
+    content: "\f00d";
+  }
+  nav .content .links{
+    display: block;
+    position: fixed;
+    background: #14181f;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: -100%;
+    margin-left: 0;
+    max-width: 350px;
+    overflow-y: auto;
+    padding-bottom: 100px;
+    transition: all 0.3s ease;
+  }
+  nav #show-menu:checked ~ .content .links{
+    left: 0%;
+  }
+  .content .links li{
+    margin: 15px 20px;
+  }
+  .content .links li a,
+  .content .links li label{
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 8px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link{
+    display: none;
+  }
+
+  /* dropdown responsive code start */
+  .content .links ul,
+  .content .links ul ul{
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .content .links #show-features:checked ~ ul,
+  .content .links #show-services:checked ~ ul,
+  .content .links #show-items:checked ~ ul{
+    max-height: 100vh;
+  }
+  .content .links ul li{
+    margin: 7px 20px;
+  }
+  .content .links ul li a{
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 5px!important;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .wrapper nav{
+    padding: 0 10px;
+  }
+  .content .logo a{
+    font-size: 27px;
+  }
+  .wrapper .search-box{
+    max-width: calc(100% - 70px);
+  }
+  .wrapper .search-box .go-icon{
+    width: 30px;
+    right: 0;
+  }
+  .wrapper .search-box input{
+    padding-right: 30px;
+  }
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+	
